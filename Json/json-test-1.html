@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h2>Modifying JSON based on joining year</h2>
+
+<p>This is a test program to learn how JSON imported from a feedcould be locally modified.</p>
+
+...
+<script type="text/javascript">
+var data_json = [{
+    "emp_no": "10001",
+        "birth_date": "1953-09-02",
+        "first_name": "Georgi",
+        "last_name": "Facello",
+        "gender": "M",
+        "hire_date": "1986-06-26",
+        "titles": {
+        "title": "Senior Engineer",
+            "from_date": "1986-06-26",
+            "to_date": "9999-01-01"
+    }
+}, {
+    "emp_no": "10002",
+        "birth_date": "1964-06-02",
+        "first_name": "Bezalel",
+        "last_name": "Simmel",
+        "gender": "F",
+        "hire_date": "1985-11-21",
+        "titles": {
+        "title": "Staff",
+            "from_date": "1996-08-03",
+            "to_date": "9999-01-01"
+    }
+}, {
+    "emp_no": "10003",
+        "birth_date": "1959-12-03",
+        "first_name": "Parto",
+        "last_name": "Bamford",
+        "gender": "M",
+        "hire_date": "1986-08-28",
+        "titles": {
+        "title": "Senior Engineer",
+            "from_date": "1995-12-03",
+            "to_date": "9999-01-01"
+    }
+}, {
+    "emp_no": "10004",
+        "birth_date": "1954-05-01",
+        "first_name": "Chirstian",
+        "last_name": "Koblick",
+        "gender": "M",
+        "hire_date": "1986-12-01",
+        "titles": [{
+        "title": "Engineer",
+            "from_date": "1986-12-01",
+            "to_date": "1995-12-01"
+    }, {
+        "title": "Senior Engineer",
+            "from_date": "1995-12-01",
+            "to_date": "9999-01-01"
+    }]
+}]
+//manipulating Json
+for (var i in data_json) {
+
+    var data = data_json[i];
+    var join_year = parseInt(data.hire_date.slice(0, 4));
+
+    if (join_year < 2000) {
+        data.company = "Company1";
+    } else {
+        data.company = "Company2";
+    }
+
+
+    var message = "Employee " + data.emp_no +
+        " joined in the year " + join_year +
+        " belongs to " + data.company;
+console.log(message);
+}
+
+alert("the answer is: " + message);
+</script>
+
+</body>
+</html>

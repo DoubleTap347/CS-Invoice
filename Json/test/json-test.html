@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSON test</title>
+</head>
+
+<body>
+<h2>Modifying JSON based on joining year</h2>
+
+<p>This is a test program to learn how JSON imported from a feed could be locally modified.</p>
+
+...
+<!--<script type="text/javascript">-->
+<script scr="json_data.json"></script>
+<script>
+
+if (typeof JSON == 'undefined') {
+var script = document.createElement('script');
+script.src = 'json_data.json';
+// Add it to the HTML head:
+document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+//manipulating Json
+for (var i in data_json) {
+
+    var data = data_json[i];
+    var join_year = parseInt(data.hire_date.slice(0, 4));
+
+    if (join_year < 2000) {
+        data.company = "Company1";
+    } else {
+        data.company = "Company2";
+    }
+
+
+    var message = "Employee " + data.emp_no +
+        " joined in the year " + join_year +
+        " belongs to " + data.company;
+console.log(message);
+}
+
+alert("the answer is: " + message);
+</script>
+
+</body>
+</html>
