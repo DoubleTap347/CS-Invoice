@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -80,7 +84,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\VS Work TAFE\Projects\S.Danzo UI\UI on steroids\UIonsteroids.csproj">
+    <ProjectReference Include="..\..\S.Danzo UI\UI on steroids\UIonsteroids.csproj">
       <Project>{F3D3A2DD-2018-4549-BF57-1442945AE896}</Project>
       <Name>UIonsteroids</Name>
     </ProjectReference>

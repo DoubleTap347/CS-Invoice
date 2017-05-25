@@ -30,18 +30,13 @@ namespace LoginScreenForm
         {
             if((UserBox.Text == username)&&(PassBox.Text == password))
             {
-                //MessageBox.Show("Login to the app was successful!");
+                MessageBox.Show("Login to the app was successful!");   //Cool feature but clicking okay everytime is annoying
                 this.Hide();
-                //Form1 ss = new Form1();
-                //Form1.Show();
 
                 DataDineFrm ss = new DataDineFrm();
                 ss.Show();
-
-
             }
             else {
-
                 MessageBox.Show("Login details incorrect");
                 PassBox.Text = "";
             }
@@ -49,6 +44,21 @@ namespace LoginScreenForm
             
             //LoginScreen ss = new LoginScreen();
             //ss.Show();
+        }
+
+        private void LoginScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PassBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
