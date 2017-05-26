@@ -9,3 +9,25 @@ c:\users\sean\documents\visual studio 2015\Projects\LoginScreenForm\LoginScreenF
 c:\users\sean\documents\visual studio 2015\Projects\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.LoginScreen.resources
 C:\Users\Sean\documents\visual studio 2015\Projects\LoginScreenForm\LoginScreenForm\bin\Debug\UI on steroids.exe
 C:\Users\Sean\documents\visual studio 2015\Projects\LoginScreenForm\LoginScreenForm\bin\Debug\UI on steroids.pdb
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\bin\Debug\LoginScreenForm.exe.config
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.exe
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.pdb
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\bin\Debug\LoginScreenForm.exe
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\bin\Debug\LoginScreenForm.pdb
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\bin\Debug\UI on steroids.exe
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\bin\Debug\UI on steroids.pdb
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.csprojResolveAssemblyReference.cache
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.LoginScreen.resources
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.Properties.Resources.resources
+C:\Users\Sean\Desktop\Handful\CS-Invoice-master\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.csproj.GenerateResource.Cache
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\bin\Debug\LoginScreenForm.exe.config
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.exe
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.pdb
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.csprojResolveAssemblyReference.cache
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.LoginScreen.resources
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.Properties.Resources.resources
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\obj\Debug\LoginScreenForm.csproj.GenerateResource.Cache
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\bin\Debug\LoginScreenForm.exe
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\bin\Debug\LoginScreenForm.pdb
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\bin\Debug\UI on steroids.exe
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\LoginScreenForm\LoginScreenForm\bin\Debug\UI on steroids.pdb

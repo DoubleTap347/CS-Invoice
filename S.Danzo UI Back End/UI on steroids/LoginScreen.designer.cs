@@ -44,6 +44,7 @@
             this.UserBox.Size = new System.Drawing.Size(184, 20);
             this.UserBox.TabIndex = 0;
             this.UserBox.Text = "lister";
+            this.UserBox.TextChanged += new System.EventHandler(this.UserBox_TextChanged);
             // 
             // PassBox
             // 
@@ -54,6 +55,7 @@
             this.PassBox.Size = new System.Drawing.Size(184, 20);
             this.PassBox.TabIndex = 1;
             this.PassBox.Text = "1472";
+            this.PassBox.TextChanged += new System.EventHandler(this.PassBox_TextChanged);
             // 
             // label1
             // 
@@ -117,6 +119,7 @@
             this.Controls.Add(this.UserBox);
             this.Name = "LoginScreen";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.LoginScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
