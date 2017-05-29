@@ -53,21 +53,16 @@ namespace UI_on_steroids
         {
             string TempString;
             string s = ", ";
-            if (count <= customers.Length)
+            if (count < customers.Length)
             {
                 customers[count] = new customerstorage(count, txt_Name.Text, txt_Address.Text, txt_Email.Text, 1, "14 / 06 / 14", 145, "20 / 06 / 14");
                 //customers[count] = new customerstorage(count, txt_Name.Text, txt_Address, txt_Email, txt_Date, txt_Costs, txt_DueDate);
                 //customers[count]  = new customerstorage(1, "Bill", "10 street", "billfrank@live.com", 1, "14 / 06 / 14", 145, "20 / 06 / 14");
 
-                TempString = lbl_YourName.Text + s + txt_Name.Text + s + txt_Address.Text + s + txt_Email.Text + s + txt_Date.Text + s + txt_Costs.Text + s + txt_DueDate.Text;
+                TempString = lbl_YourName.Text + s + txt_Name.Text + s + txt_Address.Text + s + txt_Email.Text + s + txt_Date.Text + s + txt_Costs.Text;
                 txtBoxResults.AppendText(TempString + Environment.NewLine);
                 count++;
             }
-        }
-
-        private void button8_Click_2(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void btn_SearchName_Click(object sender, EventArgs e) // Search Name
@@ -85,7 +80,7 @@ namespace UI_on_steroids
             int i = CustID;
 
             if ((CustID > count) && (CustID > 0)) {
-                MessageBox.Show ("WTF man?");
+                MessageBox.Show ("WTF Customer?");
             } else    {
                 //TempString =
                 txt_UpdateName.Text = customers[i].name;
@@ -97,6 +92,23 @@ namespace UI_on_steroids
                 //txtBoxSearchResult.AppendText(TempString + Environment.NewLine);
                 
                 // I used s string to hold and write to the textbox
+            }
+        }
+
+        private void OutputInvoice(int InvoiceID) //Outputs the details to the textbox
+        {
+            int i = InvoiceID;
+
+            if ((InvoiceID > count) && (InvoiceID > 0))
+            {
+                MessageBox.Show("WTF Invoice!?");
+            }
+            else
+            {
+                txt_InvNumber.Text = Convert.ToString(invoice[i].InvNumber);
+                txt_InvPrice.Text = Convert.ToString(invoice[i].InvPrice);
+                txt_InvCustNumber.Text = Convert.ToString(invoice[i].InvCustNum);
+                txt_Desc.Text = invoice[i].Desc;
             }
         }
 
@@ -135,9 +147,20 @@ namespace UI_on_steroids
             Application.Exit();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e) // Submit invoice
         {
+            string TempString;
+            string s = ", ";
+            if (count < invoice.Length)
+            {
+                invoice[count] = new invoicestorage(Convert.ToInt32(txt_InvNumber), Convert.ToInt32(txt_InvPrice), Convert.ToInt32(txt_InvCustNumber.Text), txt_Desc.Text);
+                //customers[count] = new customerstorage(count, txt_Name.Text, txt_Address, txt_Email, txt_Date, txt_Costs, txt_DueDate);
+                //customers[count]  = new customerstorage(1, "Bill", "10 street", "billfrank@live.com", 1, "14 / 06 / 14", 145, "20 / 06 / 14");
 
+                TempString = txt_InvNumber.Text + s + txt_InvPrice.Text + s + txt_InvCustNumber.Text;
+                txtBoxInvoiceResults.AppendText(TempString + Environment.NewLine);
+                count++;
+            }
         }
 
         private void btn_UpdateCust_Click(object sender, EventArgs e)

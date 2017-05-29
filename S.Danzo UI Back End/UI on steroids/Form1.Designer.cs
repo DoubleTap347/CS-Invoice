@@ -54,9 +54,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btn_TestData = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.txt_DueDate = new System.Windows.Forms.TextBox();
             this.txt_Costs = new System.Windows.Forms.TextBox();
             this.txt_Date = new System.Windows.Forms.TextBox();
             this.txt_Id = new System.Windows.Forms.TextBox();
@@ -65,7 +65,6 @@
             this.txtBoxResults = new System.Windows.Forms.TextBox();
             this.txt_Name = new System.Windows.Forms.TextBox();
             this.txt_Address = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -101,7 +100,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.btn_TestData = new System.Windows.Forms.Button();
+            this.txtBoxInvoiceResults = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -175,7 +175,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(233, 41);
             this.button3.TabIndex = 2;
-            this.button3.Text = "- Amend Invoice";
+            this.button3.Text = "- Update Invoice";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -261,6 +261,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label26);
+            this.tabPage2.Controls.Add(this.txtBoxInvoiceResults);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.txt_InvPrice);
             this.tabPage2.Controls.Add(this.txt_InvNumber);
@@ -327,7 +329,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(18, 285);
+            this.button6.Location = new System.Drawing.Point(66, 286);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(163, 41);
             this.button6.TabIndex = 17;
@@ -358,7 +360,6 @@
             this.tabPage1.Controls.Add(this.btn_TestData);
             this.tabPage1.Controls.Add(this.label25);
             this.tabPage1.Controls.Add(this.label24);
-            this.tabPage1.Controls.Add(this.txt_DueDate);
             this.tabPage1.Controls.Add(this.txt_Costs);
             this.tabPage1.Controls.Add(this.txt_Date);
             this.tabPage1.Controls.Add(this.txt_Id);
@@ -367,7 +368,6 @@
             this.tabPage1.Controls.Add(this.txtBoxResults);
             this.tabPage1.Controls.Add(this.txt_Name);
             this.tabPage1.Controls.Add(this.txt_Address);
-            this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label7);
@@ -384,6 +384,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btn_TestData
+            // 
+            this.btn_TestData.Location = new System.Drawing.Point(142, 14);
+            this.btn_TestData.Name = "btn_TestData";
+            this.btn_TestData.Size = new System.Drawing.Size(75, 23);
+            this.btn_TestData.TabIndex = 39;
+            this.btn_TestData.Text = "Test Data";
+            this.btn_TestData.UseVisualStyleBackColor = true;
+            this.btn_TestData.Click += new System.EventHandler(this.btn_TestData_Click);
             // 
             // label25
             // 
@@ -403,23 +413,16 @@
             this.label24.TabIndex = 37;
             this.label24.Text = "-------";
             // 
-            // txt_DueDate
-            // 
-            this.txt_DueDate.Location = new System.Drawing.Point(21, 331);
-            this.txt_DueDate.Name = "txt_DueDate";
-            this.txt_DueDate.Size = new System.Drawing.Size(139, 20);
-            this.txt_DueDate.TabIndex = 35;
-            // 
             // txt_Costs
             // 
-            this.txt_Costs.Location = new System.Drawing.Point(21, 280);
+            this.txt_Costs.Location = new System.Drawing.Point(36, 314);
             this.txt_Costs.Name = "txt_Costs";
             this.txt_Costs.Size = new System.Drawing.Size(139, 20);
             this.txt_Costs.TabIndex = 33;
             // 
             // txt_Date
             // 
-            this.txt_Date.Location = new System.Drawing.Point(21, 237);
+            this.txt_Date.Location = new System.Drawing.Point(36, 271);
             this.txt_Date.Name = "txt_Date";
             this.txt_Date.Size = new System.Drawing.Size(139, 20);
             this.txt_Date.TabIndex = 31;
@@ -427,14 +430,14 @@
             // txt_Id
             // 
             this.txt_Id.Enabled = false;
-            this.txt_Id.Location = new System.Drawing.Point(21, 60);
+            this.txt_Id.Location = new System.Drawing.Point(36, 94);
             this.txt_Id.Name = "txt_Id";
             this.txt_Id.Size = new System.Drawing.Size(54, 20);
             this.txt_Id.TabIndex = 29;
             // 
             // txt_Email
             // 
-            this.txt_Email.Location = new System.Drawing.Point(21, 186);
+            this.txt_Email.Location = new System.Drawing.Point(36, 220);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(139, 20);
             this.txt_Email.TabIndex = 25;
@@ -442,7 +445,7 @@
             // txt_InvoiceId
             // 
             this.txt_InvoiceId.Enabled = false;
-            this.txt_InvoiceId.Location = new System.Drawing.Point(106, 60);
+            this.txt_InvoiceId.Location = new System.Drawing.Point(121, 94);
             this.txt_InvoiceId.Name = "txt_InvoiceId";
             this.txt_InvoiceId.Size = new System.Drawing.Size(54, 20);
             this.txt_InvoiceId.TabIndex = 26;
@@ -457,31 +460,22 @@
             // 
             // txt_Name
             // 
-            this.txt_Name.Location = new System.Drawing.Point(21, 99);
+            this.txt_Name.Location = new System.Drawing.Point(36, 133);
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.Size = new System.Drawing.Size(139, 20);
             this.txt_Name.TabIndex = 5;
             // 
             // txt_Address
             // 
-            this.txt_Address.Location = new System.Drawing.Point(21, 140);
+            this.txt_Address.Location = new System.Drawing.Point(36, 174);
             this.txt_Address.Name = "txt_Address";
             this.txt_Address.Size = new System.Drawing.Size(139, 20);
             this.txt_Address.TabIndex = 6;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(18, 315);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 13);
-            this.label11.TabIndex = 36;
-            this.label11.Text = "Due Date";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(18, 264);
+            this.label9.Location = new System.Drawing.Point(33, 298);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(33, 13);
             this.label9.TabIndex = 34;
@@ -490,7 +484,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(18, 221);
+            this.label8.Location = new System.Drawing.Point(33, 255);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(30, 13);
             this.label8.TabIndex = 32;
@@ -499,7 +493,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 44);
+            this.label7.Location = new System.Drawing.Point(33, 78);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(16, 13);
             this.label7.TabIndex = 30;
@@ -508,7 +502,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 170);
+            this.label2.Location = new System.Drawing.Point(33, 204);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 28;
@@ -517,7 +511,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(103, 44);
+            this.label3.Location = new System.Drawing.Point(118, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 27;
@@ -546,7 +540,7 @@
             // lbl_YourName
             // 
             this.lbl_YourName.AutoSize = true;
-            this.lbl_YourName.Location = new System.Drawing.Point(18, 83);
+            this.lbl_YourName.Location = new System.Drawing.Point(33, 117);
             this.lbl_YourName.Name = "lbl_YourName";
             this.lbl_YourName.Size = new System.Drawing.Size(35, 13);
             this.lbl_YourName.TabIndex = 8;
@@ -555,7 +549,7 @@
             // lbl_YourEmail
             // 
             this.lbl_YourEmail.AutoSize = true;
-            this.lbl_YourEmail.Location = new System.Drawing.Point(18, 124);
+            this.lbl_YourEmail.Location = new System.Drawing.Point(33, 158);
             this.lbl_YourEmail.Name = "lbl_YourEmail";
             this.lbl_YourEmail.Size = new System.Drawing.Size(45, 13);
             this.lbl_YourEmail.TabIndex = 7;
@@ -809,15 +803,23 @@
             this.label23.TabIndex = 39;
             this.label23.Text = "Address";
             // 
-            // btn_TestData
+            // txtBoxInvoiceResults
             // 
-            this.btn_TestData.Location = new System.Drawing.Point(142, 14);
-            this.btn_TestData.Name = "btn_TestData";
-            this.btn_TestData.Size = new System.Drawing.Size(75, 23);
-            this.btn_TestData.TabIndex = 39;
-            this.btn_TestData.Text = "Test Data";
-            this.btn_TestData.UseVisualStyleBackColor = true;
-            this.btn_TestData.Click += new System.EventHandler(this.btn_TestData_Click);
+            this.txtBoxInvoiceResults.Location = new System.Drawing.Point(488, 53);
+            this.txtBoxInvoiceResults.Multiline = true;
+            this.txtBoxInvoiceResults.Name = "txtBoxInvoiceResults";
+            this.txtBoxInvoiceResults.Size = new System.Drawing.Size(147, 317);
+            this.txtBoxInvoiceResults.TabIndex = 20;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(14, 14);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(111, 20);
+            this.label26.TabIndex = 21;
+            this.label26.Text = "Create Invoice";
             // 
             // DataDineFrm
             // 
@@ -877,7 +879,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox txt_DueDate;
         private System.Windows.Forms.TextBox txt_Costs;
         private System.Windows.Forms.TextBox txt_Date;
         private System.Windows.Forms.TextBox txt_Id;
@@ -886,7 +887,6 @@
         private System.Windows.Forms.TextBox txtBoxResults;
         private System.Windows.Forms.TextBox txt_Name;
         private System.Windows.Forms.TextBox txt_Address;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -925,6 +925,8 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button btn_TestData;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox txtBoxInvoiceResults;
     }
 }
 
