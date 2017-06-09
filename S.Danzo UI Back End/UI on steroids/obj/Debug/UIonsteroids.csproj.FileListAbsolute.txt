@@ -48,3 +48,13 @@ C:\Users\Sean\Desktop\TAFE\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\
 C:\Users\Sean\Desktop\TAFE\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UI_on_steroids.Properties.Resources.resources
 C:\Users\Sean\Desktop\TAFE\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UI_on_steroids.Register.resources
 C:\Users\Sean\Desktop\TAFE\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UIonsteroids.csproj.GenerateResource.Cache
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\bin\Debug\UI on steroids.exe.config
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UI on steroids.exe
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UI on steroids.pdb
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\bin\Debug\UI on steroids.exe
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\bin\Debug\UI on steroids.pdb
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UIonsteroids.csprojResolveAssemblyReference.cache
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UI_on_steroids.DataDineFrm.resources
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UI_on_steroids.Properties.Resources.resources
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UI_on_steroids.Register.resources
+C:\Users\J378234\Desktop\CS-Invoice-master\S.Danzo UI Back End\UI on steroids\obj\Debug\UIonsteroids.csproj.GenerateResource.Cache

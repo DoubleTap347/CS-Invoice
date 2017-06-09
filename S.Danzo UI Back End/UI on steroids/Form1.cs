@@ -91,7 +91,7 @@ namespace UI_on_steroids
                 txt_UpdateDueDate.Text = customers[i].Due_Date;
                 //txtBoxSearchResult.AppendText(TempString + Environment.NewLine);
                 
-                // I used s string to hold and write to the textbox
+                // I used tempstring string to hold and write to the textbox
             }
         }
 
@@ -153,7 +153,7 @@ namespace UI_on_steroids
             string s = ", ";
             if (count < invoice.Length)
             {
-                invoice[count] = new invoicestorage(Convert.ToInt32(txt_InvNumber), Convert.ToInt32(txt_InvPrice), Convert.ToInt32(txt_InvCustNumber.Text), txt_Desc.Text);
+                invoice[count] = new invoicestorage(Convert.ToInt32(txt_InvNumber.Text), Convert.ToInt32(txt_InvPrice.Text), Convert.ToInt32(txt_InvCustNumber.Text), txt_Desc.Text);
                 //customers[count] = new customerstorage(count, txt_Name.Text, txt_Address, txt_Email, txt_Date, txt_Costs, txt_DueDate);
                 //customers[count]  = new customerstorage(1, "Bill", "10 street", "billfrank@live.com", 1, "14 / 06 / 14", 145, "20 / 06 / 14");
 
